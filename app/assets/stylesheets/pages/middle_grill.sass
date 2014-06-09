@@ -1,0 +1,14 @@
+@import "mixins"
+
+
+#middle-grill
+  background : top left
+  +background-image-retina('global/bg.jpg')
+
+  .animals
+    +imgbox('global/animals2.png')
+    margin : 50px auto 0
+
+    &.other
+      +imgbox('global/animals1.png')
+      margin-top : 25px

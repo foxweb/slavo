@@ -1,5 +1,4 @@
 - title('Fun Catering')
-- css('/public/stylesheets/pages/pot.css')
 section#pot
   .layout
     h1
@@ -9,33 +8,33 @@ section#pot
       ul
         li
           a(href="/big_grill")
-            | Большая<br /
+            | Большая
             | жаровня
         li
           a(href="/middle_grill")
-            | Средняя<br /
+            | Средняя
             | жаровня
         li.active
           a.forever-alone
             | Котёл
         li.last
           a(href="/oven")
-            | Русская<br /
+            | Русская
             | печь
         i.floatbreaker
     h2
-      | Из нашего 1000-литрового котла можно <br /
+      | Из нашего 1000-литрового котла можно
       | до отвала накормить самых взыскательных едоков. Сколько бы их ни было.
     .text
       | А наши повара воплотят в жизнь самые гигантоманские фантазии!
     .recipes
       .recipe.one
         .name
-          | Тройная <br /
+          | Тройная
           | уха
       .recipe.two
         .name
-          | Марсельский<br /
+          | Марсельский
           | буйабес
       .recipe.three
         .name
@@ -45,9 +44,9 @@ section#pot
       .jcarousel
         ul
           li
-            img(src="public/images/global/kotel1.jpg")
+            = image_tag "global/kotel1.jpg"
           li
-            img(src="public/images/global/kotel2.jpg")
+            = image_tag "global/kotel2.jpg"
       a.jcarousel-prev(href="")
       a.jcarousel-next(href="")
       .jcarousel-pagination

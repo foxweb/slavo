@@ -1,0 +1,66 @@
+/* 
+ * Retina helper mixins for Compass
+ * http://www.joelambert.co.uk
+ * 
+ * Copyright 2012, Joe Lambert.
+ * Free to use under the MIT license.
+ * http://joelambert.mit-license.org/
+ */
+/* line 8, ../../sass/pages/bibliography.sass */
+.content[data-unique="bibliography-1"] ol {
+  margin: 51px 0 0 27px;
+}
+/* line 11, ../../sass/pages/bibliography.sass */
+.content[data-unique="bibliography-1"] ol li {
+  font-family: "myriadPro_semibold_condensed";
+  font-size: 16px;
+  color: #474747;
+  line-height: 25px;
+  padding-left: 24px;
+}
+/* line 18, ../../sass/pages/bibliography.sass */
+.content[data-unique="bibliography-1"] ol li.lili {
+  margin-left: 6px;
+  padding-left: 18px;
+}
+/* line 23, ../../sass/pages/bibliography.sass */
+.content[data-unique="bibliography-1"] ol li span {
+  font-family: "myriadPro_condensed";
+  color: #616161;
+}
+
+/* line 29, ../../sass/pages/bibliography.sass */
+.content[data-unique="bibliography-2"] ol {
+  margin: 51px 0 0 34px;
+}
+/* line 32, ../../sass/pages/bibliography.sass */
+.content[data-unique="bibliography-2"] ol li {
+  font-family: "myriadPro_semibold_condensed";
+  font-size: 16px;
+  color: #474747;
+  line-height: 25px;
+  padding-left: 17px;
+}
+/* line 40, ../../sass/pages/bibliography.sass */
+.content[data-unique="bibliography-2"] ol li span {
+  font-family: "myriadPro_condensed";
+  color: #616161;
+}
+
+/* line 46, ../../sass/pages/bibliography.sass */
+.content[data-unique="bibliography-3"] ol {
+  margin: 51px 0 0 34px;
+}
+/* line 49, ../../sass/pages/bibliography.sass */
+.content[data-unique="bibliography-3"] ol li {
+  font-family: "myriadPro_semibold_condensed";
+  font-size: 16px;
+  color: #474747;
+  line-height: 25px;
+  padding-left: 17px;
+}
+/* line 57, ../../sass/pages/bibliography.sass */
+.content[data-unique="bibliography-3"] ol li span {
+  font-family: "myriadPro_condensed";
+  color: #616161;
+}

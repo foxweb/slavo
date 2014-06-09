@@ -1,0 +1,130 @@
+@import "compass"
+@import "compass/css3"
+@import "compass/css3/transition"
+@import "compass/css3/user-interface"
+
+@import "mixins"
+
+
+#big-grill
+  background : top left
+  +background-image-retina('global/bg.jpg')
+
+  .angus
+    background : center left no-repeat
+    +background-image-retina('global/angus.png')
+    width : 545px
+    height : 160px
+    margin : 45px auto 0
+    text-align : right
+
+    .designation
+      color: #817969
+      font-family: 'bitterbold_italic'
+      font-size : 20px
+      padding-right : 11px
+      margin-bottom : 10px
+
+    .description
+      font-size : 18px
+      font-family: 'cleanvertising_light'
+      color : #6c6154
+      line-height : 24px
+      text-align : center
+      width : 287px
+      margin-left : 255px
+
+  .recipes
+    margin-top : 50px
+
+    .left
+      float : left
+      padding-left : 60px
+
+    .right
+      float : right
+      padding-left : 60px
+
+    .name
+      font-size : 20px
+      font-family: 'bitterbold_italic'
+      color : #6c6154
+
+    .recipe
+      font-size : 18px
+      font-family: 'cleanvertising_light'
+      color : #6b665f
+      margin-top : 20px
+      line-height : 24px
+
+    .tip
+      font-size : 14px
+      font-family : arial
+      font-style : italic
+      color : #a19b91
+      margin-top : 20px
+      line-height : 18px
+      padding-left : 60px
+      background : left top no-repeat
+      +background-image-retina('global/tip-bg.png')
+
+    .one
+      width : 285px
+      position : relative
+
+
+      &:before
+        content : '1'
+        font-size : 72px
+        font-family: 'bitterbold'
+        color : #e8b525
+        position : absolute
+        top : -13px
+        left : -63px
+
+    .two
+      width : 299px
+      position : relative
+      margin-top : 76px
+
+
+      &:before
+        content : '2'
+        font-size : 72px
+        font-family: 'bitterbold'
+        color : #e8b525
+        position : absolute
+        top : -13px
+        left : -63px
+
+    .three
+      width : 293px
+      position : relative
+
+
+      &:before
+        content : '3'
+        font-size : 72px
+        font-family: 'bitterbold'
+        color : #e8b525
+        position : absolute
+        top : -13px
+        left : -63px
+
+    .four
+      width : 300px
+      position : relative
+      margin-top : 93px
+
+      &:before
+        content : '4'
+        font-size : 72px
+        font-family: 'bitterbold'
+        color : #e8b525
+        position : absolute
+        top : -13px
+        left : -63px
+
+  .animals
+    +imgbox('global/animals1.png')
+    margin : 25px auto 0

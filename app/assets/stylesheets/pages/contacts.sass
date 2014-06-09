@@ -1,0 +1,58 @@
+@import "mixins"
+
+
+#contacts
+  background : top left
+  +background-image-retina('global/bg.jpg')
+
+  .contact-container
+    width : 452px
+    background : left center no-repeat
+    +background-image-retina('global/tipotip.png')
+    margin : 0 auto
+    padding : 30px 0
+
+    .contact
+      float : right
+      text-align : center
+
+      .name
+        font-size : 32px
+        font-family: 'bitterbold'
+        color : #4b4135
+
+      .position
+        font-size : 16px
+        font-family: arial
+        font-style : italic
+        color : #544d44
+        margin : 5px 0 20px 0
+
+      .phone-number
+        font-size : 16px
+        font-family: arial
+        font-style : italic
+        font-weight : bold
+        color : #544d44
+
+      .email
+        text-decoration : none
+        font-size : 16px
+        font-family: arial
+        font-style : italic
+        font-weight : bold
+        color : #544d44
+        line-height : 24px
+
+        &:hover
+          color : #d19e10
+
+  .map
+    +border-radius(10px)
+    border : 1px solid #c6beb3
+    widht : 778px
+    height : 298px
+    margin-top : 80px
+
+  h3
+    margin-bottom : 50px

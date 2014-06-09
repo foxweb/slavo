@@ -1,5 +1,4 @@
 - title('Fun Catering')
-- css('/public/stylesheets/pages/oven.css')
 section#oven
   .layout
     h1
@@ -60,9 +59,9 @@ section#oven
       .jcarousel
         ul
           li
-            img(src="public/images/global/oven.jpg")
+            = image_tag "global/oven.jpg"
           li
-            img(src="public/images/global/oven1.jpg")
+            = image_tag "global/oven1.jpg"
       a.jcarousel-prev(href="")
       a.jcarousel-next(href="")
       .jcarousel-pagination

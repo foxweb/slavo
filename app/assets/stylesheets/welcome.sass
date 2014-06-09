@@ -1,0 +1,149 @@
+@import "compass"
+@import "compass/css3"
+@import "compass/css3/transition"
+@import "compass/css3/user-interface"
+
+@import "mixins"
+
+.index
+  overflow : hidden
+  background : #dfa601 center no-repeat
+  +background-image-retina('welcome/welcome-bg.jpg')
+  +background-size(cover !important)
+  
+  header
+    +translate3d(-200px, 0, 0)
+
+    &.show
+      +transition(transform 1s ease-out)
+      +translate3d(0px, 0, 0)
+
+#welcomepage
+  position : absolute
+  width : 780px
+  height : 620px
+  top : 0
+  left : 0
+  bottom : 50px
+  right : 0
+  margin : auto
+  z-index : 2
+
+  .layout
+    padding-top : 0
+
+    +height-lessthan(760)
+      top : -50px
+
+
+.sky
+  +imgbox('welcome/sky.png')
+  position : absolute
+  top : -20px
+  left : 50px
+
+  &.high
+    left : 1300px
+
+.city
+  +imgbox('welcome/city.png')
+  position : absolute
+  top : -20px
+  left : -250px
+
+.text
+  +imgbox('welcome/text.png')
+  position : absolute
+  top : 440px
+  left : 140px
+
+.mangal-top
+  +imgbox('welcome/mangal/mangal-top.png')
+  position : absolute
+  top : 165px
+  left : 223px
+
+.flame-shadow
+  +imgbox('welcome/mangal/flame-shadow.png')
+  position : absolute
+  top : 160px
+  left : 223px
+
+.mangal-shadow
+  +imgbox('welcome/mangal/shadow.png')
+  position : absolute
+  top : 398px
+  left : 208px
+
+.foot-container
+  position : absolute
+  top : 348px
+  left : 234px
+  width : 306px
+  height : 70px
+  overflow : hidden
+
+
+.front-foot
+  +imgbox('welcome/mangal/front-foot.png')
+  position : absolute
+  top : -35px
+  left : 0
+
+.back-foot
+  +imgbox('welcome/mangal/back-foot.png')
+  position : absolute
+  top : 340px
+  left : 244px  
+
+.truck
+  +imgbox('welcome/truck/truck.png')
+  position : absolute
+  top : 334px
+  left : 208px
+
+.truck-wheels
+  +imgbox('welcome/truck/wheels.png')
+  position : absolute
+  top : 360px
+  left : 192px
+
+.truck-wheels-rolling
+  +imgbox('welcome/truck/rolling-part.png')
+  position : absolute
+  top : 363px
+
+  &.first
+    left : 353px
+
+  &.second
+    left : 294px
+
+.back-wheels
+  +imgbox('welcome/car/back-wheels.png')
+  position : absolute
+  top : 334px
+  left : 710px
+
+.car
+  +imgbox('welcome/car/car.png')
+  position : absolute
+  top : 221px
+  left : 650px
+
+.car-wheels
+  +imgbox('welcome/car/wheels.png')
+  position : absolute
+  top : 346px
+  left : 623px
+
+.car-wheels-rolling
+  +imgbox('welcome/car/rollign-part.png')
+  position : absolute
+  top : 350px
+
+  &.one
+    left : 1011px
+
+  &.two
+    left : 696px

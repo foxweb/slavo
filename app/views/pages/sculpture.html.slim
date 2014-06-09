@@ -1,43 +1,33 @@
 - title('Fun Catering')
-- css('/public/stylesheets/pages/sculpture.css')
 section#sculpture
   .layout
     h1
-      | Скульптуры из <br /
-      | продуктов
+      | Скульптуры из <br /> продуктов
     .separator
     h2
       | Еда становится произведением искусства! Специально для вашего мероприятия наши скульпторы создадут единственные в своём роде композиции из овощей и фруктов.
     .recipes
       .recipe.one
         .name
-          | Огромный логотип <br /
-          | компании для <br /
-          | корпоративных <br /
-          | мероприятий
+          | Огромный логотип <br /> компании для <br /> корпоративных <br /> мероприятий
       .recipe.two
         .name
-          | Ростовые скульптуры <br /
-          | виновников семейных <br /
-          | торжеств
+          | Ростовые скульптуры <br /> виновников семейных <br /> торжеств
       .recipe.three
         .name
-          | Воссоздание знамени-<br /
-          | тых работ мировых <br /
-          | скульпторов для <br /
-          | городских фестивалей
+          | Воссоздание знамени-<br />тых работ мировых <br />скульпторов для <br />городских фестивалей
       i.floatbreaker
     .jcarousel-wrap
       .jcarousel
         ul
           li
-            img(src="public/images/global/foodart1.jpg")
+            = image_tag "global/foodart1.jpg"
           li
-            img(src="public/images/global/foodart2.jpg")
+            = image_tag "global/foodart2.jpg"
           li
-            img(src="public/images/global/foodart3.jpg")
+            = image_tag "global/foodart3.jpg"
           li
-            img(src="public/images/global/foodart4.jpg")
+            = image_tag "global/foodart4.jpg"
       a.jcarousel-prev(href="")
       a.jcarousel-next(href="")
       .jcarousel-pagination

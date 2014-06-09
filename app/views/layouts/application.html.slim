@@ -1,57 +1,49 @@
 doctype 5
 html
   head
-    title = title()
-    javascript:
-      | var version = #{version()}
-    meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
-    meta(content="width=1024" name="viewport")
-    link#favicon(href="/public/images/global/favicon.ico" rel="icon" type="image/x-icon")
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name="apple-mobile-web-app-capable" content="yes")
+    title= (content_for?(:title) ? yield(:title) + ' — ' : '') + "Fun-Catering"
+    = csrf_meta_tags
+    /[if lt IE 9]
+      = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"
+    = stylesheet_link_tag "application", media: "all"
+    link(href="/favicon.ico" rel="shortcut icon")
     meta(content="website" property="og:type")
     meta(content="Fun Catering" property="og:title")
-    meta(content="http://# http_host() /" property="og:url")
+    meta(content="http://#{request.host}/" property="og:url")
     meta(content="Fun Catering" property="og:site_name")
     meta(content="Устали от скучных корпоративов? Удивите гостей и закажите шоу-жарку целого быка или других животных на огромной жаровне!" property="og:description")
-    meta(content="http://# http_host() /public/images/global/opengraph.jpg" property="og:image")
+    meta(content="http://#{request.host}/images/global/opengraph.jpg" property="og:image")
     javascript:
-      /!/ RETINA FAVICON
-      | window.retina = window.devicePixelRatio > 1 ? true : false;
-      | if (window.retina)
-      | document.getElementById('favicon').getAttribute('href').replace('.ico', '@2x.png');
-    
-    link(href="/public/fontsquirrel/stylesheet.css" rel="stylesheet" media="all")
+      window.retina = window.devicePixelRatio > 1 ? true : false;
+      if (window.retina)
+      document.getElementById('favicon').getAttribute('href').replace('.ico', '@2x.png');
 
-    - css('/public/fontsquirrel/stylesheet.css')
-    - css('/public/stylesheets/styles.css')
-
-    | <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--
-    | <!--[if lt IE 8]><script src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script><![endif]--
-
-  body(class="# current_url() ")
+  body(class="#{params[:slug]}")
     header
       a.logo(href="/")
       .leftnav
         ul
-          li(class="# current_url()=='index'?'active':'' ")
+          li(class="#{params[:slug]=='index' ? 'active' : ''}")
             a(href="/") Главная
-          li.double(class="# in_array(current_url(), array('big_grill', 'middle_grill', 'pot', 'oven')) ?'active':'' ")
+          li.double(class="#{%w(big_grill middle_grill pot oven).include?(params[:slug]) ? 'active' : ''}")
             a(href="/big_grill")
-              | Шоу<br /
-              | дегустации
-          li.double(class="# current_url()=='sculpture'?'active':'' ")
+              | Шоу <br />дегустации
+          li.double(class="#{params[:slug]=='sculpture' ? 'active' : ''}")
             a(href="/sculpture")
-              | Скульптуры<br /
-              | из продуктов
-          li.double(class="# in_array(current_url(), array('foodshow', 'barmanshow')) ?'active':'' ")
+              | Скульптуры <br />из продуктов
+          li.double(class="#{%w(foodshow barmanshow).include?(params[:slug]) ? 'active' : ''}")
             a(href="/foodshow")
-              | Тематические<br /
-              | шоу
-          li(class="# current_url()=='catering'?'active':'' ")
+              | Тематические <br />шоу
+          li(class="#{params[:slug]=='catering' ? 'active' : ''}")
             a(href="/catering") Кейтеринг
-          li(class="# current_url()=='contacts'?'active':'' ")
+          li(class="#{params[:slug]=='contacts' ? 'active' : ''}")
             a(href="/contacts") Контакты
     #content
-      = $data
+      = yield
     footer
       .copyright
         | Fun Catering 2014 ©
@@ -60,16 +52,16 @@ html
         | Made in
       
 
-      script(src="/public/javascripts/vendor/jquery.js")
-      script(src="/public/javascripts/vendor/plugins.js")
-      script(src="/public/javascripts/vendor/tinyscrollbar.js")
-      script(src="/public/javascripts/vendor/jquery.requestAnimationFrame.js")
-      script(src="/public/javascripts/vendor/jcarousel.js")
-      script(src="/public/javascripts/vendor/jquery.groupinputs.min.js")
-      script(src="/public/javascripts/vendor/jquery.maskedinput.min.js")
-      script(src="/public/javascripts/vendor/jquery.mousewheel.min.js")
-      script(src="/public/javascripts/vendor/spin.js")
-      script(src="/public/javascripts/application.js?# version() ")
-      script(src="public/javascripts/vendor/greensock/TweenMax.min.js")
-      script(src="/public/javascripts/welcome.js?# version() ")
-      script(type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true&callback=gmapsready")
+      / = javascript_include_tag "vendor/jquery.js"
+      / = javascript_include_tag "vendor/plugins.js"
+      / = javascript_include_tag "vendor/tinyscrollbar.js"
+      / = javascript_include_tag "vendor/jquery.requestAnimationFrame.js"
+      / = javascript_include_tag "vendor/jcarousel.js"
+      / = javascript_include_tag "vendor/jquery.groupinputs.min.js"
+      / = javascript_include_tag "vendor/jquery.maskedinput.min.js"
+      / = javascript_include_tag "vendor/jquery.mousewheel.min.js"
+      / = javascript_include_tag "vendor/spin.js"
+      / = javascript_include_tag "application.js?# version() "
+      / = javascript_include_tag "vendor/greensock/TweenMax.min.js"
+      / = javascript_include_tag "welcome.js"
+      / = javascript_include_tag "//maps.google.com/maps/api/js?sensor=true&callback=gmapsready"

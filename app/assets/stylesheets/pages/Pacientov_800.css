@@ -1,0 +1,506 @@
+/* 
+ * Retina helper mixins for Compass
+ * http://www.joelambert.co.uk
+ * 
+ * Copyright 2012, Joe Lambert.
+ * Free to use under the MIT license.
+ * http://joelambert.mit-license.org/
+ */
+/* line 5, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-1"] .graphic {
+  width: 709px;
+  height: 379px;
+  background-image: url('../../images/Pacientov_800/slide1/axis.png?1395046205');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 13px 0 0 60px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 5, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-1"] .graphic {
+    -webkit-background-size: 709px auto;
+    -moz-background-size: 709px auto;
+    -o-background-size: 709px auto;
+    background-size: 709px auto;
+    background-image: url('../../images/Pacientov_800/slide1/axis@2x.png?1395046211');
+  }
+}
+/* line 9, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-1"] .graphic .curves {
+  width: 709px;
+  height: 379px;
+  background-image: url('../../images/Pacientov_800/slide1/curves.png?1395047111');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 9, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-1"] .graphic .curves {
+    -webkit-background-size: 709px auto;
+    -moz-background-size: 709px auto;
+    -o-background-size: 709px auto;
+    background-size: 709px auto;
+    background-image: url('../../images/Pacientov_800/slide1/curves@2x.png?1395047122');
+  }
+}
+/* line 12, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-1"] .graphic .data {
+  width: 709px;
+  height: 379px;
+  background-image: url('../../images/Pacientov_800/slide1/data.png?1395047149');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 12, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-1"] .graphic .data {
+    -webkit-background-size: 709px auto;
+    -moz-background-size: 709px auto;
+    -o-background-size: 709px auto;
+    background-size: 709px auto;
+    background-image: url('../../images/Pacientov_800/slide1/data@2x.png?1395047157');
+  }
+}
+/* line 15, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-1"] .border {
+  width: 440px;
+  height: 6px;
+  background-image: url('../../images/Pacientov_800/slide1/border.png?1395047888');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 11px 0 0 60px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 15, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-1"] .border {
+    -webkit-background-size: 440px auto;
+    -moz-background-size: 440px auto;
+    -o-background-size: 440px auto;
+    background-size: 440px auto;
+    background-image: url('../../images/Pacientov_800/slide1/border@2x.png?1395047895');
+  }
+}
+/* line 19, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-1"] .foot-note {
+  font-size: 19px;
+  font-family: "myriadPro_condensed_italic";
+  color: #474747;
+  text-transform: uppercase;
+  line-height: 27px;
+  margin: 15px 0 0 60px;
+}
+/* line 27, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-1"] .foot-note span {
+  font-family: "myriadPro_semibold_condensed";
+  color: #c0504d;
+}
+
+/* line 33, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-2"] .left {
+  float: left;
+}
+/* line 36, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-2"] .left .plus {
+  bottom: 33px;
+}
+/* line 39, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-2"] .graphic {
+  width: 490px;
+  height: 359px;
+  background-image: url('../../images/Pacientov_800/slide2/axis.png?1395050337');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 44px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 39, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-2"] .graphic {
+    -webkit-background-size: 490px auto;
+    -moz-background-size: 490px auto;
+    -o-background-size: 490px auto;
+    background-size: 490px auto;
+    background-image: url('../../images/Pacientov_800/slide2/axis@2x.png?1395050390');
+  }
+}
+/* line 43, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-2"] .graphic .curves {
+  width: 490px;
+  height: 359px;
+  background-image: url('../../images/Pacientov_800/slide2/curves.png?1395050492');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 43, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-2"] .graphic .curves {
+    -webkit-background-size: 490px auto;
+    -moz-background-size: 490px auto;
+    -o-background-size: 490px auto;
+    background-size: 490px auto;
+    background-image: url('../../images/Pacientov_800/slide2/curves@2x.png?1395050502');
+  }
+}
+/* line 46, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-2"] .graphic .data {
+  width: 490px;
+  height: 359px;
+  background-image: url('../../images/Pacientov_800/slide2/data.png?1395050546');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 46, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-2"] .graphic .data {
+    -webkit-background-size: 490px auto;
+    -moz-background-size: 490px auto;
+    -o-background-size: 490px auto;
+    background-size: 490px auto;
+    background-image: url('../../images/Pacientov_800/slide2/data@2x.png?1395050554');
+  }
+}
+/* line 49, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-2"] .right {
+  margin-left: 550px;
+}
+/* line 52, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-2"] .right .oboznachenie {
+  width: 99px;
+  height: 40px;
+  background-image: url('../../images/global/oboznachenie.png?1395051939');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 5px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 52, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-2"] .right .oboznachenie {
+    -webkit-background-size: 99px auto;
+    -moz-background-size: 99px auto;
+    -o-background-size: 99px auto;
+    background-size: 99px auto;
+    background-image: url('../../images/global/oboznachenie@2x.png?1395051947');
+  }
+}
+/* line 56, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-2"] .right .findings {
+  font-family: "myriadPro_semibold_condensed";
+  font-size: 22px;
+  color: #439539;
+  text-transform: uppercase;
+  margin-top: 25px;
+  padding-bottom: 10px;
+  background: bottom center no-repeat;
+  background-image: url('../../images/Pacientov_800/slide2/dots.png?1395127707');
+  width: 270px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 56, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-2"] .right .findings {
+    -webkit-background-size: 270px auto;
+    -moz-background-size: 270px auto;
+    -o-background-size: 270px auto;
+    background-size: 270px auto;
+    background-image: url('../../images/Pacientov_800/slide2/dots@2x.png?1395127717');
+  }
+}
+/* line 67, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-2"] .right ul {
+  font-family: "myriadPro_condensed";
+  font-size: 22px;
+  color: #474747;
+  margin-top: 28px;
+  list-style-type: none;
+}
+/* line 74, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-2"] .right ul li {
+  padding-left: 14px;
+  margin-top: 24px;
+  background: 0 10px no-repeat;
+  background-image: url('../../images/global/bullet.png?1395056653');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 74, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-2"] .right ul li {
+    -webkit-background-size: 7px auto;
+    -moz-background-size: 7px auto;
+    -o-background-size: 7px auto;
+    background-size: 7px auto;
+    background-image: url('../../images/global/bullet@2x.png?1395056669');
+  }
+}
+
+/* line 82, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-3"] .title {
+  width: 765px;
+  background: bottom center no-repeat;
+  background-image: url('../../images/Pacientov_800/slide3/dots.png?1395127896');
+  padding-bottom: 13px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 82, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-3"] .title {
+    -webkit-background-size: 766px auto;
+    -moz-background-size: 766px auto;
+    -o-background-size: 766px auto;
+    background-size: 766px auto;
+    background-image: url('../../images/Pacientov_800/slide3/dots@2x.png?1395127909');
+  }
+}
+/* line 88, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-3"] .graphic {
+  width: 771px;
+  height: 353px;
+  background-image: url('../../images/Pacientov_800/slide3/axis.png?1395063410');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 26px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 88, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-3"] .graphic {
+    -webkit-background-size: 771px auto;
+    -moz-background-size: 771px auto;
+    -o-background-size: 771px auto;
+    background-size: 771px auto;
+    background-image: url('../../images/Pacientov_800/slide3/axis@2x.png?1395063429');
+  }
+}
+/* line 92, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-3"] .graphic .one {
+  width: 771px;
+  height: 353px;
+  background-image: url('../../images/Pacientov_800/slide3/curves1.png?1395063578');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 92, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-3"] .graphic .one {
+    -webkit-background-size: 771px auto;
+    -moz-background-size: 771px auto;
+    -o-background-size: 771px auto;
+    background-size: 771px auto;
+    background-image: url('../../images/Pacientov_800/slide3/curves1@2x.png?1395063589');
+  }
+}
+/* line 96, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-3"] .graphic .two {
+  width: 771px;
+  height: 353px;
+  background-image: url('../../images/Pacientov_800/slide3/curves2.png?1395063669');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 96, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-3"] .graphic .two {
+    -webkit-background-size: 771px auto;
+    -moz-background-size: 771px auto;
+    -o-background-size: 771px auto;
+    background-size: 771px auto;
+    background-image: url('../../images/Pacientov_800/slide3/curves2@2x.png?1395063679');
+  }
+}
+/* line 99, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-3"] .graphic .data {
+  width: 771px;
+  height: 353px;
+  background-image: url('../../images/Pacientov_800/slide3/data.png?1395063784');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 99, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-3"] .graphic .data {
+    -webkit-background-size: 771px auto;
+    -moz-background-size: 771px auto;
+    -o-background-size: 771px auto;
+    background-size: 771px auto;
+    background-image: url('../../images/Pacientov_800/slide3/data@2x.png?1395063794');
+  }
+}
+/* line 102, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-3"] .findings {
+  font-family: "myriadPro_semibold_condensed";
+  font-size: 22px;
+  color: #439539;
+  text-transform: uppercase;
+  margin: 4px 0 0 16px;
+  padding-bottom: 10px;
+  background: bottom center no-repeat;
+  background-image: url('../../images/Pacientov_800/slide3/dots.png?1395127896');
+  width: 749px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 102, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-3"] .findings {
+    -webkit-background-size: 766px auto;
+    -moz-background-size: 766px auto;
+    -o-background-size: 766px auto;
+    background-size: 766px auto;
+    background-image: url('../../images/Pacientov_800/slide3/dots@2x.png?1395127909');
+  }
+}
+/* line 113, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-3"] .foot-note {
+  font-family: "myriadPro_condensed";
+  font-size: 22px;
+  color: #2e2e2e;
+  background: 0 10px no-repeat;
+  background-image: url('../../images/global/bullet.png?1395056653');
+  padding-left: 18px;
+  margin-top: 16px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 113, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-3"] .foot-note {
+    -webkit-background-size: 7px auto;
+    -moz-background-size: 7px auto;
+    -o-background-size: 7px auto;
+    background-size: 7px auto;
+    background-image: url('../../images/global/bullet@2x.png?1395056669');
+  }
+}
+
+/* line 124, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-4"] .title {
+  width: 817px;
+  background: bottom center no-repeat;
+  background-image: url('../../images/Pacientov_800/slide4/dots-817.png?1395128536');
+  padding-bottom: 13px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 124, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-4"] .title {
+    -webkit-background-size: 817px auto;
+    -moz-background-size: 817px auto;
+    -o-background-size: 817px auto;
+    background-size: 817px auto;
+    background-image: url('../../images/Pacientov_800/slide4/dots-817@2x.png?1395128543');
+  }
+}
+/* line 130, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-4"] .left {
+  float: left;
+}
+/* line 133, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-4"] .graphic {
+  width: 490px;
+  height: 281px;
+  background-image: url('../../images/Pacientov_800/slide4/axis.png?1395128246');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 46px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 133, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-4"] .graphic {
+    -webkit-background-size: 490px auto;
+    -moz-background-size: 490px auto;
+    -o-background-size: 490px auto;
+    background-size: 490px auto;
+    background-image: url('../../images/Pacientov_800/slide4/axis@2x.png?1395128255');
+  }
+}
+/* line 137, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-4"] .graphic .curves {
+  width: 490px;
+  height: 281px;
+  background-image: url('../../images/Pacientov_800/slide4/curves.png?1395128344');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 137, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-4"] .graphic .curves {
+    -webkit-background-size: 490px auto;
+    -moz-background-size: 490px auto;
+    -o-background-size: 490px auto;
+    background-size: 490px auto;
+    background-image: url('../../images/Pacientov_800/slide4/curves@2x.png?1395128350');
+  }
+}
+/* line 140, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-4"] .graphic .data {
+  width: 490px;
+  height: 281px;
+  background-image: url('../../images/Pacientov_800/slide4/data.png?1395128395');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 140, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-4"] .graphic .data {
+    -webkit-background-size: 490px auto;
+    -moz-background-size: 490px auto;
+    -o-background-size: 490px auto;
+    background-size: 490px auto;
+    background-image: url('../../images/Pacientov_800/slide4/data@2x.png?1395128416');
+  }
+}
+/* line 143, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-4"] .right {
+  margin-left: 524px;
+}
+/* line 146, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-4"] .right .oboznachenie {
+  width: 99px;
+  height: 40px;
+  background-image: url('../../images/global/oboznachenie.png?1395051939');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 146, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-4"] .right .oboznachenie {
+    -webkit-background-size: 99px auto;
+    -moz-background-size: 99px auto;
+    -o-background-size: 99px auto;
+    background-size: 99px auto;
+    background-image: url('../../images/global/oboznachenie@2x.png?1395051947');
+  }
+}
+/* line 150, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-4"] .right .findings {
+  font-family: "myriadPro_semibold_condensed";
+  font-size: 31px;
+  color: #439539;
+  text-transform: uppercase;
+  margin: 142px 0 0 -2px;
+  padding-bottom: 10px;
+  background: center bottom no-repeat;
+  background-image: url('../../images/Pacientov_800/slide4/dots.png?1395130455');
+  width: 298px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 150, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-4"] .right .findings {
+    -webkit-background-size: 299px auto;
+    -moz-background-size: 299px auto;
+    -o-background-size: 299px auto;
+    background-size: 299px auto;
+    background-image: url('../../images/Pacientov_800/slide4/dots@2x.png?1395130465');
+  }
+}
+/* line 161, ../../sass/pages/Pacientov_800.sass */
+.content[data-unique="1-4"] .right .foot-note {
+  font-family: "myriadPro_condensed";
+  font-size: 22px;
+  color: #2e2e2e;
+  background: 0 10px no-repeat;
+  background-image: url('../../images/global/bullet.png?1395056653');
+  padding-left: 14px;
+  margin-top: 25px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 161, ../../sass/pages/Pacientov_800.sass */
+  .content[data-unique="1-4"] .right .foot-note {
+    -webkit-background-size: 7px auto;
+    -moz-background-size: 7px auto;
+    -o-background-size: 7px auto;
+    background-size: 7px auto;
+    background-image: url('../../images/global/bullet@2x.png?1395056669');
+  }
+}
