@@ -1,0 +1,15 @@
+production:
+  adapter: mysql2
+  database: slavo_production
+  encoding: utf8
+  username: slavo
+  password:
+  host: localhost
+
+development:
+  adapter: mysql2
+  database: slavo_development
+  encoding: utf8
+  username: root
+  password:
+  host: localhost

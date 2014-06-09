@@ -1,0 +1,40 @@
+doctype 5
+html
+  head
+    title = title()
+    javascript:
+      | var version = #{version()}
+    meta(name="viewport" content="width=960px, initial-scale=1.0, user-scalable=no")
+    meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+    link(href="public/fontsquirrel/stylesheet.css" rel="stylesheet" media="all")
+    meta(content="website" property="og:type")
+    meta(content="Fun Catering" property="og:title")
+    meta(content="http://# http_host() /" property="og:url")
+    meta(content="Fun Catering" property="og:site_name")
+    meta(content="Устали от скучных корпоративов? Удивите гостей и закажите шоу-жарку целого быка или других животных на огромной жаровне!" property="og:description")
+    meta(content="http://# http_host() /public/images/global/opengraph.jpg" property="og:image")
+   
+    - css('public/fontsquirrel/stylesheet.css')
+    - css('public/stylesheets/welcome.css')
+    - foreach(array_reverse(css()) as $v)
+      link(rel="stylesheet" href="# $v}?#{version() ")
+
+  body(id="# sectionId() ")
+    .verticalSlider#slider
+      .sliderbox
+        .slide
+          section.content#welcomepage
+            a.animatedgroup(href="# l('Jan_Presista_Root_RU') ")
+              .logo.animate.fadeIn
+              .text.animate.slideRight
+    footer
+      .dniwe
+
+      script(src="public/javascripts/vendor/jquery.js")
+      script(src="public/javascripts/vendor/plugins.js")
+      script(src="public/javascripts/vendor/tinyscrollbar.js")
+      script(src="public/javascripts/vendor/jquery.requestAnimationFrame.js")
+      script(src="public/javascripts/application.js?# version() ")
+      - if (is_dev_host())
+        /!/ %script(src="public/javascripts/vendor/cssrefresh.js")
+

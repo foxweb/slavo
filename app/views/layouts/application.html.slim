@@ -1,0 +1,75 @@
+doctype 5
+html
+  head
+    title = title()
+    javascript:
+      | var version = #{version()}
+    meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+    meta(content="width=1024" name="viewport")
+    link#favicon(href="/public/images/global/favicon.ico" rel="icon" type="image/x-icon")
+    meta(content="website" property="og:type")
+    meta(content="Fun Catering" property="og:title")
+    meta(content="http://# http_host() /" property="og:url")
+    meta(content="Fun Catering" property="og:site_name")
+    meta(content="Устали от скучных корпоративов? Удивите гостей и закажите шоу-жарку целого быка или других животных на огромной жаровне!" property="og:description")
+    meta(content="http://# http_host() /public/images/global/opengraph.jpg" property="og:image")
+    javascript:
+      /!/ RETINA FAVICON
+      | window.retina = window.devicePixelRatio > 1 ? true : false;
+      | if (window.retina)
+      | document.getElementById('favicon').getAttribute('href').replace('.ico', '@2x.png');
+    
+    link(href="/public/fontsquirrel/stylesheet.css" rel="stylesheet" media="all")
+
+    - css('/public/fontsquirrel/stylesheet.css')
+    - css('/public/stylesheets/styles.css')
+
+    | <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--
+    | <!--[if lt IE 8]><script src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script><![endif]--
+
+  body(class="# current_url() ")
+    header
+      a.logo(href="/")
+      .leftnav
+        ul
+          li(class="# current_url()=='index'?'active':'' ")
+            a(href="/") Главная
+          li.double(class="# in_array(current_url(), array('big_grill', 'middle_grill', 'pot', 'oven')) ?'active':'' ")
+            a(href="/big_grill")
+              | Шоу<br /
+              | дегустации
+          li.double(class="# current_url()=='sculpture'?'active':'' ")
+            a(href="/sculpture")
+              | Скульптуры<br /
+              | из продуктов
+          li.double(class="# in_array(current_url(), array('foodshow', 'barmanshow')) ?'active':'' ")
+            a(href="/foodshow")
+              | Тематические<br /
+              | шоу
+          li(class="# current_url()=='catering'?'active':'' ")
+            a(href="/catering") Кейтеринг
+          li(class="# current_url()=='contacts'?'active':'' ")
+            a(href="/contacts") Контакты
+    #content
+      = $data
+    footer
+      .copyright
+        | Fun Catering 2014 ©
+      .made-in
+        a.beta(href="http://betaagency.ru/")
+        | Made in
+      
+
+      script(src="/public/javascripts/vendor/jquery.js")
+      script(src="/public/javascripts/vendor/plugins.js")
+      script(src="/public/javascripts/vendor/tinyscrollbar.js")
+      script(src="/public/javascripts/vendor/jquery.requestAnimationFrame.js")
+      script(src="/public/javascripts/vendor/jcarousel.js")
+      script(src="/public/javascripts/vendor/jquery.groupinputs.min.js")
+      script(src="/public/javascripts/vendor/jquery.maskedinput.min.js")
+      script(src="/public/javascripts/vendor/jquery.mousewheel.min.js")
+      script(src="/public/javascripts/vendor/spin.js")
+      script(src="/public/javascripts/application.js?# version() ")
+      script(src="public/javascripts/vendor/greensock/TweenMax.min.js")
+      script(src="/public/javascripts/welcome.js?# version() ")
+      script(type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true&callback=gmapsready")

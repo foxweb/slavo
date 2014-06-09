@@ -1,0 +1,50 @@
+- title('Fun Catering')
+- css('/public/stylesheets/pages/middle_grill.css')
+section#middle-grill
+  .layout
+    h1
+      | Шоу-дегустации
+    .separator
+    .topnav
+      ul
+        li
+          a(href="/big_grill")
+            | Большая<br /
+            | жаровня
+        li.active
+          a
+            | Средняя<br /
+            | жаровня
+        li
+          a.forever-alone(href="/pot")
+            | Котёл
+        li.last
+          a(href="/oven")
+            | Русская<br /
+            | печь
+        i.floatbreaker
+    h2
+      | Для компаний поменьше <br /
+      | мы привезём нашу среднюю жаровню. <br /
+      | А выбор животного зависит только <br /
+      | от ваших предпочтений.
+    .animals
+    .jcarousel-wrap
+      .jcarousel
+        ul
+          li
+            img(src="public/images/global/slide1.jpg")
+          li
+            img(src="public/images/global/slide2.jpg")
+          li
+            img(src="public/images/global/slide3.jpg")
+      a.jcarousel-prev(href="")
+      a.jcarousel-next(href="")
+      .jcarousel-pagination
+    h3
+      | Для настоящих гурманов мы зажарим экзотических <br /
+      | животных на средней жаровне.
+    .animals.other
+    .separator
+    .order
+      span Заказать

@@ -1,0 +1,55 @@
+- title('Fun Catering')
+- css('/public/stylesheets/pages/pot.css')
+section#pot
+  .layout
+    h1
+      | Шоу-дегустации
+    .separator
+    .topnav
+      ul
+        li
+          a(href="/big_grill")
+            | Большая<br /
+            | жаровня
+        li
+          a(href="/middle_grill")
+            | Средняя<br /
+            | жаровня
+        li.active
+          a.forever-alone
+            | Котёл
+        li.last
+          a(href="/oven")
+            | Русская<br /
+            | печь
+        i.floatbreaker
+    h2
+      | Из нашего 1000-литрового котла можно <br /
+      | до отвала накормить самых взыскательных едоков. Сколько бы их ни было.
+    .text
+      | А наши повара воплотят в жизнь самые гигантоманские фантазии!
+    .recipes
+      .recipe.one
+        .name
+          | Тройная <br /
+          | уха
+      .recipe.two
+        .name
+          | Марсельский<br /
+          | буйабес
+      .recipe.three
+        .name
+          | Супы и каши
+      i.floatbreaker
+    .jcarousel-wrap
+      .jcarousel
+        ul
+          li
+            img(src="public/images/global/kotel1.jpg")
+          li
+            img(src="public/images/global/kotel2.jpg")
+      a.jcarousel-prev(href="")
+      a.jcarousel-next(href="")
+      .jcarousel-pagination
+    .order
+      span Заказать

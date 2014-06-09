@@ -1,0 +1,36 @@
+.popup-layout
+  #spin-bg
+  .title
+    | Обратный <br /
+    | звонок
+  .text
+    | Укажите свои контактные данные,<br /
+    | и наши менеджеры с вами свяжутся.
+
+  form
+    input.name(type="text" placeholder="Ф. И. О." name="name" required="required" id="name")
+    span
+      | +7
+    input.number(type="text" placeholder="Мобильный телефон" name="Phone" required="required" id="phonenumber")
+    input.mail(type="text" placeholder="Адрес электронной почты" name="mail" required="required" id="email")
+    textarea(placeholder="Задайте ваш вопрос" name="question" id="askquestion")
+    .send#send-request
+      input(type="button" value="")
+      span.request
+        | Отправить<br /
+        | заявку
+javascript:
+  
+  | $(function(){
+    | $('#send-request').click(function(){
+      | $.post('/send_mail?tpl=callback', {
+          | name: $('#name').val(),
+          | phone: $('#phonenumber').val(),
+          | email: $('#email').val(),
+          | question: $('#askquestion').val()
+        | },function(){
+          | window.location = ''
+      | })
+      | $('#spin-bg').show();
+    | })
+  | })

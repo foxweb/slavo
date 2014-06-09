@@ -1,0 +1,70 @@
+- title('Fun Catering')
+- css('/public/stylesheets/pages/oven.css')
+section#oven
+  .layout
+    h1
+      | Шоу-дегустации
+    .separator
+    .topnav
+      ul
+        li
+          a(href="/big_grill")
+            | Большая<br /
+            | жаровня
+        li
+          a(href="/middle_grill")
+            | Средняя<br /
+            | жаровня
+        li
+          a.forever-alone(href="/pot")
+            | Котёл
+        li.last.active
+          a
+            | Русская<br /
+            | печь
+        i.floatbreaker
+    h2
+      | Русская печь, как в сказках, приедет к вам сама.
+      | Как в старые добрые времена, в жару дровяной печи, мы создадим простые и очень вкусные кулинарные шедевры!
+    .recipes
+      .recipe.one
+        .name
+          | Традиционные <br /
+          | русские пироги
+        .tip
+          | По старинным рецептам, <br /
+          | от самых традиционных <br /
+          | до экзотических
+      .recipe.two
+        .name
+          | Настоящая <br /
+          | итальянская пицца
+        .tip
+          | Хоть она приготовлена <br /
+          | на русских дровах, мы <br /
+          | использовали рецепты <br /
+          | лучших итальянских <br /
+          | пиццайоло
+      .recipe.three
+        .name
+          | Блюда в казане
+        .tip
+          | Казан — напрасно забытая <br /
+          | посуда, которую с испокон <br /
+          | веков использовали для <br /
+          | приготовления любых блюд.<br /
+          | Мы можем и приготовить кашу, <br /
+          | и запечь мясо
+      i.floatbreaker
+    .jcarousel-wrap
+      .jcarousel
+        ul
+          li
+            img(src="public/images/global/oven.jpg")
+          li
+            img(src="public/images/global/oven1.jpg")
+      a.jcarousel-prev(href="")
+      a.jcarousel-next(href="")
+      .jcarousel-pagination
+    .order
+      span Заказать
